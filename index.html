@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVOTX-Bio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+    <div class="logoContainer">
+      <a href="https://www.mvotx.com/">
+        <img class="logo2" src="assets/images/logo.webp" alt="Logo" />
+      </a>
+      <h4 class="logoDes">Social commerce enabler</h4>
+    </div>
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+      <aside class="sidebar active" data-sidebar>
+        <!-- tôi mới thêm image và h1 -->
+
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              id="avatar"
+              src="./assets/images/my-avatar.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Nguyễn Hồng Nga</h1>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>MVOTX - BIO</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  id="email"
+                  href="mailto:richard@example.com"
+                  class="contact-link"
+                  >richard@example.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Số điện thoại</p>
+
+                <a id="phone" href="tel:+12133522795" class="contact-link"
+                  >+1 (213) 352-2795</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Ngày sinh</p>
+
+                <time id="dob" datetime="1982-06-23">June 23, 1982</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Nơi ở hiện tại</p>
+
+                <address id="current-location"></address>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Sẵn sàng làm việc tại</p>
+                <address id="canWork-location"></address>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mic-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Chất giọng</p>
+                <address id="canWork-location">
+                  Giọng nữ trẻ, truyền cảm, dễ nghe
+                </address>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="compass-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Giọng vùng miền</p>
+                <address id="canWork-location">
+                  Miền Tây Nam Bộ
+                </address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+        </div>
+      </aside>
+
+      <!--
+      - #main-contentf
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>
+                Thông tin
+              </button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Kinh nghiệm</button>
+            </li>
+            <!-- 
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Liên hệ MVOTX</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="Thông tin">
+          <header>
+            <h2 class="h2 article-title">Giới thiệu bản thân</h2>
+          </header>
+
+          <section class="about-text">
+            <p id="introduction"></p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">
+              Trong thời gian làm việc tại
+              <span style="color: #ed156a"> MVOTX </span>
+            </h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/calendar.png"
+                    alt="design icon"
+                    style="
+                      filter: brightness(0) saturate(100%) invert(31%)
+                        sepia(65%) saturate(3480%) hue-rotate(320deg)
+                        brightness(93%) contrast(102%);
+                    "
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 id="liveTime" class="h4 service-item-title">123+</h4>
+                  <p class="service-item-text">Giờ live bán hàng</p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    style="
+                      filter: brightness(0) saturate(100%) invert(31%)
+                        sepia(65%) saturate(3480%) hue-rotate(320deg)
+                        brightness(93%) contrast(102%);
+                    "
+                    src="./assets/images/tik-tok.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">4+</h4>
+
+                  <p class="service-item-text">
+                    Kênh live đã tham gia host bán hàng
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    style="
+                      filter: brightness(0) saturate(100%) invert(31%)
+                        sepia(65%) saturate(3480%) hue-rotate(320deg)
+                        brightness(93%) contrast(102%);
+                    "
+                    src="./assets/images/partner.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">6+</h4>
+
+                  <p class="service-item-text">
+                    Nhãn hàng đã cộng tác live stream bán hàng
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    style="
+                      filter: brightness(0) saturate(100%) invert(31%)
+                        sepia(65%) saturate(3480%) hue-rotate(320deg)
+                        brightness(93%) contrast(102%);
+                    "
+                    src="./assets/images/money.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">1.522.12đ +</h4>
+
+                  <p class="service-item-text">
+                    GMV trực tiếp từ Live stream bán hàng
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Nhãn hàng từng cộng tác</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/coca.jpg"
+                      alt="Daniel lewis"
+                      width="60"
+                      style="border-radius: 10%"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Cocacola
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Coca-Cola là một thương hiệu nước giải khát nổi tiếng toàn
+                      cầu, được ra đời vào năm 1886 tại Atlanta, Georgia, Mỹ.
+                      Với hương vị độc đáo và công thức bí mật, Coca-Cola nhanh
+                      chóng trở thành một biểu tượng văn hóa, được yêu thích ở
+                      hơn 200 quốc gia. Ngoài sản phẩm chính là nước ngọt có
+                      gas, Coca-Cola còn phát triển đa dạng các dòng sản phẩm
+                      khác như nước trái cây, trà, và nước khoáng. Công ty không
+                      chỉ chú trọng vào chất lượng sản phẩm mà còn cam kết phát
+                      triển bền vững và hỗ trợ cộng đồng qua nhiều chương trình
+                      ý nghĩa trên toàn thế giới.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      style="border-radius: 10%"
+                      src="./assets/images/croc.jpg"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Crocs
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Crocs là một thương hiệu giày dép nổi tiếng, được thành
+                      lập vào năm 2002 tại Mỹ. Crocs nổi bật với thiết kế độc
+                      đáo, nhẹ nhàng và đặc trưng bởi chất liệu Croslite™, một
+                      loại nhựa độc quyền mang lại sự thoải mái và bền bỉ. Ban
+                      đầu, Crocs được thiết kế như giày đi biển, nhưng nhanh
+                      chóng trở thành xu hướng thời trang toàn cầu nhờ tính đa
+                      dụng và phong cách riêng biệt. Thương hiệu cung cấp nhiều
+                      mẫu mã đa dạng, từ dép xỏ ngón, sandal, đến giày clog với
+                      nhiều màu sắc và phụ kiện trang trí Jibbitz™ độc đáo.
+                      Crocs không chỉ là một sản phẩm thời trang mà còn là biểu
+                      tượng của sự tiện lợi và phong cách cá nhân.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/haidao.jpg"
+                      alt="Emily evans"
+                      width="60"
+                      style="border-radius: 10%"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Hải Đảo Food
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Hải Đảo Food là một thương hiệu chuyên cung cấp các sản
+                      phẩm hải sản tươi ngon, chất lượng cao, mang đậm hương vị
+                      biển cả. Với nguồn nguyên liệu được thu hoạch từ các vùng
+                      biển sạch, sản phẩm của Hải Đảo Food luôn đảm bảo độ tươi
+                      mới và an toàn thực phẩm. Thương hiệu cung cấp đa dạng các
+                      mặt hàng như tôm, cua, cá, mực, và các loại hải sản chế
+                      biến sẵn, phù hợp với nhiều nhu cầu ẩm thực. Hải Đảo Food
+                      cam kết mang đến trải nghiệm ẩm thực hải sản đích thực,
+                      không chỉ chú trọng đến chất lượng mà còn cả dịch vụ khách
+                      hàng. Đây là lựa chọn lý tưởng cho những người yêu thích
+                      ẩm thực biển và muốn thưởng thức hải sản một cách tiện lợi
+                      và đáng tin cậy.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/kombocha.jpg"
+                      alt="Henry william"
+                      width="60"
+                      style="border-radius: 10%"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Kombucha
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Kombucha là một loại thức uống lên men có nguồn gốc từ
+                      Trung Quốc và được biết đến rộng rãi trên toàn thế giới
+                      nhờ vào những lợi ích sức khỏe nổi bật. Thức uống này được
+                      làm từ trà (thường là trà đen hoặc trà xanh) kết hợp với
+                      đường và một loại nấm men và vi khuẩn, tạo ra một quá
+                      trình lên men tự nhiên. Kombucha có hương vị đặc trưng,
+                      nhẹ nhàng chua và có thể có vị ngọt hoặc cay tùy vào quá
+                      trình lên men. Kombucha nổi bật với các lợi ích sức khỏe
+                      như hỗ trợ tiêu hóa, cải thiện hệ miễn dịch, giúp giải độc
+                      cơ thể và cung cấp một lượng nhỏ vitamin và khoáng chất.
+                      Ngoài ra, kombucha còn chứa một lượng nhỏ cồn do quá trình
+                      lên men, nhưng không đủ để gây say. Với xu hướng hiện nay,
+                      kombucha ngày càng trở nên phổ biến như một thức uống bổ
+                      sung dinh dưỡng và hỗ trợ sức khỏe, được bán dưới nhiều
+                      hình thức đóng chai hoặc có thể tự làm tại nhà.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <!-- <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section> -->
+          <!-- <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <img
+                  src="./assets/images/service.png"
+                  alt="education icon"
+                  style="
+                    filter: brightness(0) saturate(100%) invert(31%) sepia(65%)
+                      saturate(3480%) hue-rotate(320deg) brightness(93%)
+                      contrast(102%);
+                  "
+                  width="40"
+                />
+              </div>
+
+              <h3 class="h3">
+              <span style="color: #ed156a"> MVOTX có gì? </span>
+              </h3> 
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Phòng livestream
+                </h4>
+
+                <span> Dịch vụ cho thuê phòng thiết bị livestream chuyên nghiệp.</span>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Booking KOCs/ KOLs</h4>
+
+                <span>Hệ thống MCN rộng lớn, network KOCs/ KOLs với đa dạng ngành hàng.</span>
+
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Livestream
+                </h4>
+
+                <span>Cung cấp giải pháp bán hàng chuyên nghiệp từ Livestream, tăng doanh số cùng MVOT X.</span>
+
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Chiến dịch
+
+                </h4>
+
+                <span>Tổ chức chuỗi dự án Mega Live, Flash Sale, “Phiên Live Triệu Đô” Khu Công Nghiệp,...</span>
+
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Đối tác toàn diện của TikTok Shop
+                </h4>
+
+                <span>Tăng trưởng doanh thu trên Tiktok Cùng MVOTX từ những đặc quyền của Tiktok Partner
+                </span>
+
+              </li>
+            </ol>
+          </section> -->
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="Kinh nghiệm">
+          <header>
+            <h2 class="h2 article-title">Kinh nghiệm & kỹ năng</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Trình độ học vấn</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Đại học Kinh tế TP.HCM</h4>
+
+                <span>Cử nhân loại Giỏi</span>
+              </li>
+            </ol>
+          </section>
+          <section style="margin-bottom: 30px" class="skill">
+            <h3 class="h3 skills-title">Kỹ năng host live</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Am hiểu về sản phẩm</h5>
+                  <data value="80">8/10</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Kỹ năng truyền đạt</h5>
+                  <data value="70">7/10</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Kiến thức về thuật toán Tiktok</h5>
+                  <data value="90">9/10</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Khả năng tương tác với người xem</h5>
+                  <data value="50">6/10</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Khả năng điều phối phiên Live</h5>
+                  <data value="50">6/10</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Phong cách Live</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Linh Hoạt</h4>
+
+                <span
+                  >Thích ứng nhanh và điều chỉnh phong cách phù hợp với từng đối
+                  tượng</span
+                >
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Thân thiện & Gần gũi</h4>
+
+                <span>
+                  Tạo sự kết nối thân mật, giao tiếp như trò chuyện với bạn bè
+                </span>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Chuyên gia & Tư vấn</h4>
+
+                <span
+                  >Cung cấp lời khuyên chuyên nghiệp, giải quyết vấn đề cho
+                  khách hàng</span
+                >
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <article class="contact" data-page="Liên hệ MVOTX">
+          <header>
+            <h2 class="h2 article-title">Liên hệ</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4200.605486273377!2d106.73294901085555!3d10.74337765975775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752577f92fcbe1%3A0x1c3ba6383c131c47!2zMTYzIFRy4bqnbiBUcuG7jW5nIEN1bmcsIFTDom4gVGh14bqtbiDEkMO0bmcsIFF14bqtbiA3LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1734493585273!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">
+              Liên hệ với <span style="color: #ed156a"> MVOTX </span>
+            </h3>
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Họ và tên"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Địa chỉ email"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Lời nhắn với MVOTX"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Kết nối với chúng tôi</span>
+              </button>
+            </form>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Finance</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Orizon</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Brawlhalla</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">DSM.</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">MetaSpark</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Summary</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Task Manager</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Arrival</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      --></div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script>
+    const getData = async () => {
+      const data2 = {
+        _id: "67443649b9ac342c17379062",
+        fullName: "Nguyễn Thị Hồng Nga",
+        phone: "090***60",
+        signStatus: "contract_signed",
+        liveTime: 0,
+        role: "creator",
+        isActive: true,
+        createdAt: "2024-11-25T08:33:13.363Z",
+        updatedAt: "2024-12-17T10:22:44.274Z",
+        __v: 0,
+        personalInfo: {
+          fullName: "Nguyễn Thị Hồng Nga",
+          dob: "2002-12-22",
+          isMale: false,
+          tiktokUsername: "@ng*****_official",
+          email: "nguye****ga@gmail.com",
+          phoneNumber: "090*****3860",
+          currentLocation: "Quận 1, TP.HCM",
+          hometown: "Tỉnh Cao Bằng",
+          canWorkAt: ["Quận 7", "Quận 6", "Phú Nhuận", "Tân Bình", "Gò Vấp"],
+          introduction:
+            "Tôi là người sáng tạo nội dung đam mê chia sẻ những sản phẩm chất lượng đến cộng đồng.",
+          school: "Đại học Kinh tế Quốc dân",
+          major: "Marketing",
+          educationLevel: "Cử nhân",
+          voiceIntroduction:
+            "Tôi tự tin mang đến sự kết nối qua giọng nói truyền cảm và đầy năng lượng.",
+        },
+        exInfo: {
+          saleEx: "3 năm kinh nghiệm bán hàng trực tuyến và thương mại điện tử",
+          productKnowledge: 4, // 1-5 scale
+          communicationSkills: 4, // 1-5 scale
+          tiktokAlgorithm: 4, // 1-5 scale
+          interoperability: 5, // 1-5 scale
+          coordinationAbility: 5, // 1-5 scale
+          liveStyles: [
+            {
+              id: 1,
+              name: "Năng lượng",
+              description:
+                "Mang đến không khí sôi động, nhiệt huyết và cuốn hút người xem.",
+            },
+            {
+              name: "Chuyên môn",
+              description:
+                "Thể hiện kiến thức chuyên sâu và sự am hiểu về sản phẩm.",
+              id: 2,
+            },
+            {
+              name: "Chuyên gia & Tư vấn",
+              description:
+                "Cung cấp lời khuyên chuyên nghiệp, giải quyết vấn đề cho khách hàng.",
+              id: 6,
+            },
+            {
+              name: "Storytelling & Trải nghiệm",
+              description:
+                "Kể câu chuyện về sản phẩm một cách sinh động, chia sẻ trải nghiệm cá nhân.",
+              id: 5,
+            },
+          ],
+          channel: [
+            {
+              id: "7260083793665901569",
+              name: "nguyen.hong.nga",
+              am_name: "Nguyễn Hồng Nga Official",
+              active: true,
+            },
+            {
+              id: "6975752779654775809",
+              name: "beauty.tips.daily",
+              am_name: "Mẹo Làm Đẹp",
+              active: true,
+            },
+            {
+              id: "7318494795487347713",
+              name: "nga.family.life",
+              am_name: "Góc Sống Gia Đình",
+              active: false,
+            },
+            {
+              id: "7345865164929369106",
+              name: "healthy.lifestyle",
+              am_name: "Sống Khỏe",
+              active: true,
+            },
+            {
+              id: "7347914676107789320",
+              name: "homedecor.vn",
+              am_name: "Trang Trí Nhà Cửa",
+              active: false,
+            },
+          ],
+          brand: [
+            {
+              stt: 1,
+              name: "Sunhouse",
+              image_link:
+                "https://mvot.vn/wp-content/uploads/2024/04/sunhouse.jpg",
+              decription: "Đồ gia dụng và bếp núc",
+              type: "HL",
+              status: 1,
+            },
+            {
+              stt: 2,
+              name: "Liên Á",
+              image_link:
+                "https://mvot.vn/wp-content/uploads/2024/04/liena.jpg",
+              decription: "Chăn ga gối nệm cao cấp",
+              type: "HL",
+              status: 1,
+            },
+            {
+              stt: 3,
+              name: "Lotus Towel",
+              image_link:
+                "https://mvot.vn/wp-content/uploads/2024/04/lotus-towel.jpg",
+              decription: "Các loại khăn cao cấp",
+              type: "HL",
+              status: 1,
+            },
+            {
+              stt: 4,
+              name: "Bear",
+              image_link: "https://mvot.vn/wp-content/uploads/2024/04/bear.jpg",
+              decription: "Đồ gia dụng thông minh",
+              type: "HL",
+              status: 1,
+            },
+          ],
+        },
+        avatar:
+          "https://uploads.mvotx.com/uploads/image-1734430964398-726200480.jpg",
+        liveAtMVOTX: {
+          timeLive: 123,
+          liveChanel: 13,
+          liveSession: 4,
+          brand: 5,
+        },
+      };
+
+      const avatar = document.getElementById("avatar");
+      const intro = document.getElementById("introduction");
+      const email = document.getElementById("email");
+      const phone = document.getElementById("phone");
+      const dob = document.getElementById("dob");
+      const currentLocation = document.getElementById("current-location");
+      const canWorkAt = document.getElementById("canWork-location");
+      // set data
+      avatar.src = data2.avatar;
+      const dobDDMMYYYY = new Date(data2.personalInfo.dob);
+      dob.innerHTML = `${dobDDMMYYYY.getDate()}/${dobDDMMYYYY.getMonth()}/${dobDDMMYYYY.getFullYear()}`;
+      intro.innerHTML = data2.personalInfo.introduction;
+      email.innerHTML = data2.personalInfo.email;
+      phone.innerHTML = data2.personalInfo.phoneNumber;
+      currentLocation.innerHTML =
+        data2.personalInfo.currentLocation + " ,Thành phố Hồ Chí Minh";
+      canWorkAt.innerHTML = data2.personalInfo.canWorkAt.join(", ");
+    };
+    getData();
+  </script>
+</html>
